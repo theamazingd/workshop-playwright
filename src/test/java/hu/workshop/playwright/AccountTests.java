@@ -17,7 +17,6 @@ public class AccountTests extends TestCaseBase {
         log().info("New account id: " + mainPage.getNewAccountId());
     }
 
-
     @Test
     void testOpenNewSavingsAccount(){
         MainPage mainPage = new MainPage(page);
