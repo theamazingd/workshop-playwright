@@ -10,6 +10,6 @@ public class ServicesPage extends BasePage {
     }
 
     public String getEndpointAddress(String serviceName) {
-        return page.locator("tr:has(td:has-text('" + serviceName + "')) span.value >> nth=0").textContent();
+        return page.locator("tr:has(td:has-text('" + serviceName + "')) span:has-text('Endpoint address') + span.value").textContent();
     }
 }

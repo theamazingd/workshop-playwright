@@ -25,7 +25,7 @@ public class ServicesTests extends TestCaseBase {
 
         menuPage.clickServices();
         String endpointAddress = servicesPage.getEndpointAddress("Bookstore (Version 2.0)");
-        assertEquals("http://parabank.parasoft.com:8080/parabank/services/store-01", endpointAddress);
+        assertEquals("http://parabank.parasoft.com:8080/parabank/services/store-01V2", endpointAddress);
     }
     @Test
     void testCheckBookstoreUsernameEndpoint(){
@@ -34,6 +34,6 @@ public class ServicesTests extends TestCaseBase {
 
         menuPage.clickServices();
         String endpointAddress = servicesPage.getEndpointAddress("Bookstore (WS-Security Username Token)");
-        assertEquals("http://parabank.parasoft.com:8080/parabank/services/store-01", endpointAddress);
+        assertEquals("http://parabank.parasoft.com:8080/parabank/services/store-wss-01", endpointAddress);
     }
 }
